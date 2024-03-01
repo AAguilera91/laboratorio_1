@@ -74,8 +74,10 @@ class BigCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+
+    
     return Card( //widget nativo que permite dejar una carta (cuadrito) para poner un widget hijo
-      color: theme.colorScheme.secondary, //se elige el color de card
+      color: theme.colorScheme.primary, //se elige el color de card
       child: Padding( //crea un nuevo widget donde la palabra aleatora de toma current, adquiere una carta en el fondo para mejorar la presentación
         padding: const EdgeInsets.all(20), // centra el texto del cuadro carta o dependiendo del aldo que queremos centrar
         child: Text(pair.asUpperCase), //widget hijo que ewl paddin pide para ponert algo, puede ser un botton o en ese caso, el texto que viene desde el BigCard  y es una palabra aleatoria
